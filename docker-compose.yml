@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api_web:
+    container_name: api_webcalc
+    build:
+      context: docker/php
+    volumes:
+      - ./backend:/data/www:cached
+
+  nginx_proxy:
+    container_name: nginx_webcalc
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx/api.conf:/etc/nginx/conf.d/default.conf
