@@ -1,0 +1,35 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Calc web app
+            description: Sample calculator app project
+            version: 1.0.0
+#        components:
+#            schemas:
+#                Calculation:
+#                    allOf:
+#                        - $ref: '#/components/parameters/numberA'
+#                        - $ref: '#/components/parameters/numberB'
+#                        - $ref: '#/components/parameters/operation'
+#            parameters:
+#                numberA:
+#                    name: 'First number'
+#                    in: query
+#                    required: true
+#                    schema:
+#                        type: float
+#                numberB:
+#                    name: 'Second number'
+#                    in: query
+#                    required: true
+#                    schema:
+#                        type: float
+#                operation:
+#                    name: 'Operation type'
+#                    in: query
+#                    required: true
+#                    schema:
+#                        type: string
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/ # Accepts all routes /

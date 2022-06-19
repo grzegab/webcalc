@@ -1,0 +1,5 @@
+webcalc:
+    type: annotation
+    prefix: /calc
+    name_prefix: calc_
+    resource: App\Calc\App\Service
