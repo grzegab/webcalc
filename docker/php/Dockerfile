@@ -18,4 +18,6 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 WORKDIR /data/www
 
-RUN composer install
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
